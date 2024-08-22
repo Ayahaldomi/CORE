@@ -53,13 +53,18 @@ namespace TASK21_08.Controllers
             {
                 return BadRequest();
             }
-            var deleteproduct = _db.Products.Where(l => l.CategoryId == id).ToList();
-            foreach (var product in deleteproduct) {
+            var deleteorder = _db.Orders.Where(l => l.Product.CategoryId == id).ToList();
 
-                _db.Products.Remove(product);
+            _db.Orders.RemoveRange(deleteorder);
+            _db.SaveChanges();
+
+            var deleteproduct = _db.Products.Where(l => l.CategoryId == id).ToList();
+            
+
+                _db.Products.RemoveRange(deleteproduct);
                 _db.SaveChanges();
 
-            }
+            
             var deleteCategory = _db.Categories.FirstOrDefault(c => c.CategoryId == id);
 
             _db.Categories.Remove(deleteCategory);

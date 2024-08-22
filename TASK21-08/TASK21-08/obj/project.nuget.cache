@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f6bGyfUKdMw=",
+  "dgSpecHash": "eC8BSHVrnyU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Orange\\Desktop\\New folder (3)\\CORE\\TASK21-08\\TASK21-08\\TASK21-08.csproj",
+  "projectFilePath": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK21-08\\TASK21-08\\TASK21-08.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Orange\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Orange\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
