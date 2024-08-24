@@ -23,7 +23,8 @@ namespace TASK21_08.Controllers
             return Ok(category);
         }
 
-        [HttpGet("{id:int:min(5)}")]
+        [Route("{id:int:min(5)}")]
+        [HttpGet]
         public IActionResult getById(int id)
         {
             if (id <= 0)
@@ -35,7 +36,8 @@ namespace TASK21_08.Controllers
             return Ok(categoryId);
         }
 
-        [HttpGet("{name}")]
+        [Route("{name}")]
+        [HttpGet]
         public IActionResult GetByName(string? name)
         {
             if (name == null)
@@ -51,7 +53,9 @@ namespace TASK21_08.Controllers
 
             return Ok(categoryName);
         }
-        [HttpDelete("{id}")]
+
+        [Route("{id}")]
+        [HttpDelete]
         public IActionResult DeleteById(int id)
         {
             if (id <= 0)
