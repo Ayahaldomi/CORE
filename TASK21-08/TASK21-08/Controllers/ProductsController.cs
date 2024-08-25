@@ -15,7 +15,7 @@ namespace TASK21_08.Controllers
         public IActionResult Get()
         {
             var product = _db.Products.ToList();
-            return Ok();
+            return Ok(product);
         }
 
         [HttpGet("{id:int:max(10)}")]
@@ -27,6 +27,34 @@ namespace TASK21_08.Controllers
             }
             
             var product = _db.Products.Where(l => l.ProductId == id).FirstOrDefault();
+
+            return Ok(product);
+        }
+
+        [HttpGet("/ProductById/{id}")]
+        public IActionResult GetByProductId(int id)
+        {
+            if (id == null)
+            {
+                var products = _db.Products.ToList();
+                return BadRequest(products);
+            }
+
+            var product = _db.Products.Where(l => l.ProductId == id).ToList();
+
+            return Ok(product);
+        }
+
+        [HttpGet("/ProductByCategoryId/{id}")]
+        public IActionResult GetByCategoryId(int id)
+        {
+            if (id == null)
+            {
+                var products = _db.Products.ToList();
+                return BadRequest(products);
+            }
+
+            var product = _db.Products.Where(l => l.CategoryId == id).ToList();
 
             return Ok(product);
         }

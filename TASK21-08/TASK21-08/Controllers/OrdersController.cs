@@ -35,22 +35,22 @@ namespace TASK21_08.Controllers
             return Ok(oredId);
         }
 
-        //[HttpGet("{name}")]
-        //public IActionResult GetByName(string? name)
-        //{
-        //    if (name == null)
-        //    {
-        //        return BadRequest();
-        //    }
-        //    var categoryName = _db.Orders.FirstOrDefault(l => l.or == name);
-        //    if (categoryName == null)
-        //    {
+        [HttpGet("{name}")]
+        public IActionResult GetByName(int name)
+        {
+            if (name == null)
+            {
+                return BadRequest();
+            }
+            var userOrders = _db.Orders.FirstOrDefault(l => l.User.UserId == name);
+            if (userOrders == null)
+            {
 
-        //        return BadRequest();
-        //    }
+                return BadRequest();
+            }
 
-        //    return Ok(categoryName);
-        //}
+            return Ok(userOrders);
+        }
         [HttpDelete("{id}")]
         public IActionResult DeleteById(int id)
         {
