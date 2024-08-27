@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TASK21-08\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAnwFMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T17:00:02.171Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

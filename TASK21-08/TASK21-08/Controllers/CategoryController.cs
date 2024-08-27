@@ -99,7 +99,7 @@ namespace TASK21_08.Controllers
             return Ok(category);
         }
 
-        [Route("getById/{id:int:min(5)}")]
+        [Route("getById/{id:int}")]
         [HttpGet]
         public IActionResult getById(int id) {
             if (id <=0)

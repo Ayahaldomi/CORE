@@ -16,6 +16,21 @@ namespace TASK21_08.Controllers
             _db = db;
         }
 
+        [HttpPost("math")]
+        public IActionResult math(string math)
+        {
+           string[] m = math.Split(' ');
+            if (Convert.ToChar(m[1]) == '-') {
+                var Result = Convert.ToInt64(m[0]) - Convert.ToInt64(m[2]);
+                return Ok(Result);
+            }
+            else if (Convert.ToChar(m[1]) == '+') {
+                var Result = Convert.ToInt64(m[0]) + Convert.ToInt64(m[2]);
+                return Ok(Result);
+            }
+            return BadRequest();
+            
+}
         [HttpGet]
         public IActionResult Get()
         {
