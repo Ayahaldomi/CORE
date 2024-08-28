@@ -43,7 +43,7 @@ async function allCategory() {
 
         <div class="card-body">
             <div class="form-group">
-                    <img class="card-img-top" src="../../../Back_end/TASK21-08/Uploads/${response.productImage}" alt="Card image cap" style= "width:150px;">
+                    <img class="card-img-top" src="../../../Back_end/TASK21-08/Uploads/${response.productImage}" alt="${response.productImage}" style= "width:150px;">
 <br />
                 <label for="exampleInputPassword1">Category Image</label>
                 <input name="productImage" type="file" class="form-control" id="productImage">

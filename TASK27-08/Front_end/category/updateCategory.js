@@ -25,7 +25,7 @@ async function allCategory() {
         <input name="categoryName" type="text" class="form-control" id="exampleInputEmail1" value="${response.categoryName}">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
-        <img class="card-img-top" src="../images/${response.categoryImage}" alt="Card image cap">
+        <img class="card-img-top" src="../../Back_end/TASK21-08/Uploads/${response.categoryImage}" alt="Card image cap">
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleInputPassword1">Category Image</label>

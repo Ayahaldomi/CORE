@@ -13,6 +13,31 @@ namespace TASK21_08.Controllers
         private readonly MyDbContext _db;
         public ProductsController(MyDbContext db) { _db = db; }
 
+
+        [HttpGet("number")]
+        public  IActionResult number(int num1 , int num2) { 
+
+            if (num1 == 30 || num2 == 30)
+            {
+                
+                return Ok("true");
+            }
+            if (num1 + num2 == 30)
+            {
+                return Ok("true");
+            }
+            return Ok("false");
+        }
+
+        [HttpGet("three")]
+        public IActionResult three(int num1) {
+            if (num1 % 3 == 0 || num1 % 7 == 0) { 
+                return Ok("true");
+            }
+            return Ok("false");
+        }
+
+
         [HttpGet]
         public IActionResult Get()
         {
@@ -21,7 +46,7 @@ namespace TASK21_08.Controllers
         }
 
         [HttpPost]
-        public IActionResult postProduct([FromForm] productPost product)
+        public async Task<IActionResult> postProduct([FromForm] productPost product)
         {
             if (product.ProductImage != null)
             {
@@ -30,12 +55,14 @@ namespace TASK21_08.Controllers
                 {
                     Directory.CreateDirectory(uploadsFolderPath);
                 }
+
                 var filePath = Path.Combine(uploadsFolderPath, product.ProductImage.FileName);
+
+                // Ensure the file stream is properly handled with async/await
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    product.ProductImage.CopyToAsync(stream);
+                    await product.ProductImage.CopyToAsync(stream);
                 }
-
             }
 
             var pro = new Product
@@ -44,16 +71,17 @@ namespace TASK21_08.Controllers
                 Description = product.Description,
                 Price = product.Price,
                 CategoryId = product.CategoryId,
-                ProductImage = product.ProductImage.FileName
+                ProductImage = product.ProductImage?.FileName // Using ?. to avoid null reference if no image is uploaded
             };
 
             _db.Products.Add(pro);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync(); // Use async save changes
             return Ok(pro);
         }
 
+
         [HttpPut("{id}")]
-        public IActionResult putProduct(int id, [FromForm] productPost product)
+        public async Task<IActionResult> putProduct(int id, [FromForm] productPost product)
         {
             if (product.ProductImage != null)
             {
@@ -65,12 +93,12 @@ namespace TASK21_08.Controllers
                 var filePath = Path.Combine(uploadsFolderPath, product.ProductImage.FileName);
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    product.ProductImage.CopyToAsync(stream);
+                    await product.ProductImage.CopyToAsync(stream);
                 }
 
             }
             var x = _db.Products.FirstOrDefault(l => l.ProductId == id);
-
+             
 
             x.ProductName = product.ProductName;
                 x.Description = product.Description;
@@ -167,6 +195,7 @@ namespace TASK21_08.Controllers
             return Ok();
         }
 
+        
 
 
     }

@@ -15,6 +15,10 @@ public partial class MyDbContext : DbContext
     {
     }
 
+    public virtual DbSet<Cart> Carts { get; set; }
+
+    public virtual DbSet<CartItem> CartItems { get; set; }
+
     public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<Order> Orders { get; set; }
@@ -29,6 +33,39 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Cart>(entity =>
+        {
+            entity.HasKey(e => e.CartId).HasName("PK__Carts__51BCD797B855CFFE");
+
+            entity.HasIndex(e => e.UserId, "UQ__Carts__1788CCADD255CD90").IsUnique();
+
+            entity.Property(e => e.CartId).HasColumnName("CartID");
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithOne(p => p.Cart)
+                .HasForeignKey<Cart>(d => d.UserId)
+                .HasConstraintName("FK_UserCart");
+        });
+
+        modelBuilder.Entity<CartItem>(entity =>
+        {
+            entity.HasKey(e => e.CartItemId).HasName("PK__CartItem__488B0B2A17776935");
+
+            entity.HasIndex(e => new { e.CartId, e.ProductId }, "UQ__CartItem__9AFC1BF81D630AD4").IsUnique();
+
+            entity.Property(e => e.CartItemId).HasColumnName("CartItemID");
+            entity.Property(e => e.CartId).HasColumnName("CartID");
+            entity.Property(e => e.ProductId).HasColumnName("ProductID");
+
+            entity.HasOne(d => d.Cart).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.CartId)
+                .HasConstraintName("FK_Cart");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.CartItems)
+                .HasForeignKey(d => d.ProductId)
+                .HasConstraintName("FK_Product");
+        });
+
         modelBuilder.Entity<Category>(entity =>
         {
             entity.HasKey(e => e.CategoryId).HasName("PK__Categori__19093A2B4FFDFA92");
@@ -47,15 +84,15 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.ProductId).HasColumnName("productId");
             entity.Property(e => e.UserId).HasColumnName("UserID");
 
-            //entity.HasOne(d => d.Product).WithMany(p => p.Orders)
-            //    .HasForeignKey(d => d.ProductId)
-            //    .OnDelete(DeleteBehavior.ClientSetNull)
-            //    .HasConstraintName("FK__Orders__productI__3F466844");
+            entity.HasOne(d => d.Product).WithMany(p => p.Orders)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Orders__productI__3F466844");
 
-            //entity.HasOne(d => d.User).WithMany(p => p.Orders)
-            //    .HasForeignKey(d => d.UserId)
-            //    .OnDelete(DeleteBehavior.ClientSetNull)
-            //    .HasConstraintName("FK__Orders__UserID__3E52440B");
+            entity.HasOne(d => d.User).WithMany(p => p.Orders)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Orders__UserID__3E52440B");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -69,9 +106,9 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.ProductImage).IsUnicode(false);
             entity.Property(e => e.ProductName).IsUnicode(false);
 
-            //entity.HasOne(d => d.Category).WithMany(p => p.Products)
-            //    .HasForeignKey(d => d.CategoryId)
-            //    .HasConstraintName("FK__Products__Catego__398D8EEE");
+            entity.HasOne(d => d.Category).WithMany(p => p.Products)
+                .HasForeignKey(d => d.CategoryId)
+                .HasConstraintName("FK__Products__Catego__398D8EEE");
         });
 
         modelBuilder.Entity<User>(entity =>
