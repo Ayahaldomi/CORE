@@ -30,6 +30,7 @@ async function ProductDetails() {
 
             <p class="card-text">${element.description}</p>
         </div>
+        <input type="number" value="1" id="quantity">
         <button type="button" class="btn btn-outline-info" onclick="addToCart()">Add To Cart</button>
 
         </div>`;

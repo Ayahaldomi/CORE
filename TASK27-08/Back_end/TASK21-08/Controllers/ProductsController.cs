@@ -14,28 +14,28 @@ namespace TASK21_08.Controllers
         public ProductsController(MyDbContext db) { _db = db; }
 
 
-        [HttpGet("number")]
-        public  IActionResult number(int num1 , int num2) { 
+        //[HttpGet("number")]
+        //public  IActionResult number(int num1 , int num2) { 
 
-            if (num1 == 30 || num2 == 30)
-            {
+        //    if (num1 == 30 || num2 == 30)
+        //    {
                 
-                return Ok("true");
-            }
-            if (num1 + num2 == 30)
-            {
-                return Ok("true");
-            }
-            return Ok("false");
-        }
+        //        return Ok("true");
+        //    }
+        //    if (num1 + num2 == 30)
+        //    {
+        //        return Ok("true");
+        //    }
+        //    return Ok("false");
+        //}
 
-        [HttpGet("three")]
-        public IActionResult three(int num1) {
-            if (num1 % 3 == 0 || num1 % 7 == 0) { 
-                return Ok("true");
-            }
-            return Ok("false");
-        }
+        //[HttpGet("three")]
+        //public IActionResult three(int num1) {
+        //    if (num1 % 3 == 0 || num1 % 7 == 0) { 
+        //        return Ok("true");
+        //    }
+        //    return Ok("false");
+        //}
 
 
         [HttpGet]
@@ -123,19 +123,31 @@ namespace TASK21_08.Controllers
 
             return Ok(product);
         }
+        
 
-        [HttpGet("{id:int:max(10)}")]
+        [HttpGet("{id:int}")]
+        [ProducesResponseType(200, Type = typeof(Product))]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(500)]
         public IActionResult GetById(int id) { 
-            if (id <= 0)
+            if (id < 0)
             {
-
+                
             return BadRequest(); 
             }
             
             var product = _db.Products.Where(l => l.ProductId == id).FirstOrDefault();
 
+            if (product == null) {
+                
+                return NotFound($"the product with id of {id} is Not Found");
+            }
+
             return Ok(product);
         }
+       
 
         [HttpGet("/ProductById/{id}")]
         public IActionResult GetByProductId(int id)

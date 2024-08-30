@@ -13,6 +13,12 @@ namespace TASK21_08.Controllers
 
         public CartController(MyDbContext db) { _db = db; }
 
+        [HttpGet]
+        public IActionResult Get() { 
+            var allcarts = _db.CartItems.ToList();
+            return Ok(allcarts);
+        }
+
         [HttpGet("{id}")]
         public IActionResult GetAll (int id)
         {
@@ -52,6 +58,26 @@ namespace TASK21_08.Controllers
             return Ok();
 
 
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult deleteCartItem(int id) { 
+
+            var cartItem = _db.CartItems.FirstOrDefault(l => l.CartItemId == id);
+
+            _db.CartItems.Remove(cartItem);
+            _db.SaveChanges();
+            return Ok();
+            
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult cartItemPut(int id, [FromBody] cartItemPutDTO cartItem) { 
+            var cart = _db.CartItems.FirstOrDefault(l =>l.CartItemId == id);
+            cart.Quantity = cartItem.Quantity;
+            _db.CartItems.Update(cart);
+            _db.SaveChanges();
+            return Ok();
         }
     }
 }
