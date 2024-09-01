@@ -1,12 +1,155 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\usersdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\usersdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\productpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\productpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\DTOs\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\PasswordHasher.cs",
+              "RelativeToolTip": "TASK21-08\\DTOs\\PasswordHasher.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T10:04:14.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\User.cs",
+              "RelativeToolTip": "TASK21-08\\Models\\User.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T08:50:04.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "usersDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\usersDTOs.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\DTOs\\usersDTOs.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\usersDTOs.cs",
+              "RelativeToolTip": "TASK21-08\\DTOs\\usersDTOs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:55:43.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "TASK21-08\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAADwv50AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T07:53:34.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TASK21-08\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAgwKEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:37:43.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "TASK21-08\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAoBAAAAAAAAAAAowB8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:41:16.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Program.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Program.cs",
+              "RelativeToolTip": "TASK21-08\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:44:45.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "productPost.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\productPost.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\DTOs\\productPost.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\productPost.cs",
+              "RelativeToolTip": "TASK21-08\\DTOs\\productPost.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T11:41:32.921Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

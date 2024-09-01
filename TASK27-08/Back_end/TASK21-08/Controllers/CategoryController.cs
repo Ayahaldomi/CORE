@@ -31,7 +31,7 @@ namespace TASK21_08.Controllers
                 {
                     category.CategoryImage.CopyToAsync(stream);
                 }
-                
+
             }
             Category cat = new Category
             {
@@ -51,7 +51,7 @@ namespace TASK21_08.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult updateCategory(int id,[FromForm] CategoryPost category)
+        public IActionResult updateCategory(int id, [FromForm] CategoryPost category)
         {
 
             if (category.CategoryImage != null)
@@ -93,33 +93,37 @@ namespace TASK21_08.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get() { 
+        public IActionResult Get()
+        {
 
-            var category = _db.Categories.ToList(); 
+            var category = _db.Categories.ToList();
             return Ok(category);
         }
 
         [Route("getById/{id:int}")]
         [HttpGet]
-        public IActionResult getById(int id) {
-            if (id <=0)
+        public IActionResult getById(int id)
+        {
+            if (id <= 0)
             {
                 return BadRequest();
             }
             var categoryId = _db.Categories.FirstOrDefault(l => l.CategoryId == id);
-            
+
             return Ok(categoryId);
         }
 
         [Route("getByName")]
         [HttpGet]
-        public IActionResult GetByName(string? name) {
+        public IActionResult GetByName(string? name)
+        {
             if (name == null)
             {
                 return BadRequest();
             }
             var categoryName = _db.Categories.FirstOrDefault(l => l.CategoryName == name);
-            if (categoryName == null) {
+            if (categoryName == null)
+            {
 
                 return BadRequest();
             }
@@ -129,7 +133,8 @@ namespace TASK21_08.Controllers
 
         [Route("{id}")]
         [HttpDelete]
-        public IActionResult DeleteById(int id) {
+        public IActionResult DeleteById(int id)
+        {
             if (id <= 0)
             {
                 return BadRequest();
@@ -140,12 +145,12 @@ namespace TASK21_08.Controllers
             _db.SaveChanges();
 
             var deleteproduct = _db.Products.Where(l => l.CategoryId == id).ToList();
-            
 
-                _db.Products.RemoveRange(deleteproduct);
-                _db.SaveChanges();
 
-            
+            _db.Products.RemoveRange(deleteproduct);
+            _db.SaveChanges();
+
+
             var deleteCategory = _db.Categories.FirstOrDefault(c => c.CategoryId == id);
 
             _db.Categories.Remove(deleteCategory);

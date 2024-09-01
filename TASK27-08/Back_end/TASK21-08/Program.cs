@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using TASK21_08.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,6 +25,20 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 
 
 var app = builder.Build();
+
+////then add this to program.cs before the app.Routing(); 
+
+//app.UseStaticFiles(); // Serves static files from the wwwroot folder by default
+
+//// Serve files from the images folder
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//    FileProvider = new PhysicalFileProvider(
+//        Path.Combine(builder.Environment.ContentRootPath, "Images")),
+//    RequestPath = "/Images" // the path of the images folder 
+//});
+
+
 app.UseCors("Development");
 
 // Configure the HTTP request pipeline.

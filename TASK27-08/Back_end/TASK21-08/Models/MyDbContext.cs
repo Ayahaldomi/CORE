@@ -77,7 +77,7 @@ public partial class MyDbContext : DbContext
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAFAD2F039F");
+            entity.HasKey(e => e.OrderId).HasName("PK__Orders__C3905BAF801D4AC6");
 
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
             entity.Property(e => e.OrderDate).HasColumnType("datetime");
@@ -87,12 +87,12 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.Product).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Orders__productI__3F466844");
+                .HasConstraintName("FK__Orders__productI__5DCAEF64");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Orders__UserID__3E52440B");
+                .HasConstraintName("FK__Orders__UserID__5CD6CB2B");
         });
 
         modelBuilder.Entity<Product>(entity =>
