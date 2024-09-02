@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using TASK21_08.DTOs;
 using TASK21_08.Models;
 
@@ -58,13 +59,24 @@ namespace TASK21_08.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult putProduct(int id, [FromForm] usersDTOs userDTO)
+        public IActionResult putProduct(int id, [FromForm] userPutDTO userDTO)
         {
+           
 
             var x = _db.Users.FirstOrDefault(l => l.UserId == id);
 
+            if (!PasswordHasher.VerifyPasswordHash(userDTO.OldPassword, x.PasswordHash, x.PasswordSalt))
+            {
+                return Unauthorized("Old Password is Wrong");
+            }
+            byte[] passwordHash, passwordSalt;
+            PasswordHasher.CreatePasswordHash(userDTO.Password, out passwordHash, out passwordSalt);
 
+
+            x.Username = userDTO.Username;
             x.Password = userDTO.Password;
+            x.PasswordHash = passwordHash;
+            x.PasswordSalt = passwordSalt;
             x.Email = userDTO.Email;
 
 
@@ -74,7 +86,7 @@ namespace TASK21_08.Controllers
             return Ok(x);
         }
 
-        [Route("{id:int:min(5)}")]
+        [Route("{id:int}")]
         [HttpGet]
         public IActionResult getById(int id)
         {
@@ -95,14 +107,14 @@ namespace TASK21_08.Controllers
             {
                 return BadRequest();
             }
-            var categoryName = _db.Users.FirstOrDefault(l => l.Username == name);
-            if (categoryName == null)
+            var user = _db.Users.FirstOrDefault(l => l.Username == name);
+            if (user == null)
             {
 
                 return BadRequest();
             }
 
-            return Ok(categoryName);
+            return Ok(user);
         }
 
         [Route("{id}")]
@@ -143,8 +155,16 @@ namespace TASK21_08.Controllers
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt
             };
+            
             await _db.Users.AddAsync(user);
             await _db.SaveChangesAsync();
+            Cart cart = new Cart
+            {
+                UserId = user.UserId
+            };
+            await _db.Carts.AddAsync(cart);
+            await _db.SaveChangesAsync();
+
             //For Demo Purpose we are returning the PasswordHash and PasswordSalt
             return Ok(user);
         }
@@ -161,9 +181,14 @@ namespace TASK21_08.Controllers
             {
                 return Unauthorized("Invalid username or password.");
             }
+            var cartid = await _db.Carts.FirstOrDefaultAsync( l => l.UserId == user.UserId );
+
+            user.Cart = cartid;
             // Generate a token or return a success response
-            return Ok("User logged in successfully");
+            return Ok(user);
         }
+
+       
 
     }
 }

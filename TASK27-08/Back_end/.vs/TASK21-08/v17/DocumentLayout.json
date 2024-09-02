@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\userputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\userputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\usersdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\usersdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|solutionrelative:task21-08\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B91404A1-A4A1-4DE3-987D-123AA4209160}|TASK21-08\\TASK21-08.csproj|c:\\users\\orange\\desktop\\core\\core\\task27-08\\back_end\\task21-08\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,89 +54,126 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "TASK21-08\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T10:25:36.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\Order.cs",
+              "RelativeToolTip": "TASK21-08\\Models\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T10:25:34.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\Cart.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\Cart.cs",
+              "RelativeToolTip": "TASK21-08\\Models\\Cart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T09:04:02.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "TASK21-08\\DTOs\\PasswordHasher.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\PasswordHasher.cs",
               "RelativeToolTip": "TASK21-08\\DTOs\\PasswordHasher.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T10:04:14.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\User.cs",
               "RelativeDocumentMoniker": "TASK21-08\\Models\\User.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Models\\User.cs",
               "RelativeToolTip": "TASK21-08\\Models\\User.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA8AAAA7AAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABAAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T08:50:04.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "usersDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\usersDTOs.cs",
-              "RelativeDocumentMoniker": "TASK21-08\\DTOs\\usersDTOs.cs",
-              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\usersDTOs.cs",
-              "RelativeToolTip": "TASK21-08\\DTOs\\usersDTOs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T07:55:43.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "TASK21-08\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\UsersController.cs",
               "RelativeToolTip": "TASK21-08\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAIsAAAAAAAAAAADwv50AAAANAAAA",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAiwHEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T07:53:34.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "TASK21-08\\Controllers\\CategoryController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "TASK21-08\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAgwKEAAAABAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAswKEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T11:37:43.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "userPutDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\userPutDTO.cs",
+              "RelativeDocumentMoniker": "TASK21-08\\DTOs\\userPutDTO.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\userPutDTO.cs",
+              "RelativeToolTip": "TASK21-08\\DTOs\\userPutDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T12:18:42.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "TASK21-08\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "TASK21-08\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAoBAAAAAAAAAAAowB8BAAAAAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAkwEAAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T11:41:16.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T11:41:16.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\Program.cs",
               "RelativeDocumentMoniker": "TASK21-08\\Program.cs",
@@ -132,12 +181,11 @@
               "RelativeToolTip": "TASK21-08\\Program.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T11:44:45.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-31T11:44:45.912Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "productPost.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\CORE\\CORE\\TASK27-08\\Back_end\\TASK21-08\\DTOs\\productPost.cs",
               "RelativeDocumentMoniker": "TASK21-08\\DTOs\\productPost.cs",

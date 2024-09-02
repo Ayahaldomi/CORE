@@ -33,19 +33,19 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Cart>(entity =>
-        {
-            entity.HasKey(e => e.CartId).HasName("PK__Carts__51BCD797B855CFFE");
+        //modelBuilder.Entity<Cart>(entity =>
+        //{
+        //    entity.HasKey(e => e.CartId).HasName("PK__Carts__51BCD797B855CFFE");
 
-            entity.HasIndex(e => e.UserId, "UQ__Carts__1788CCADD255CD90").IsUnique();
+        //    entity.HasIndex(e => e.UserId, "UQ__Carts__1788CCADD255CD90").IsUnique();
 
-            entity.Property(e => e.CartId).HasColumnName("CartID");
-            entity.Property(e => e.UserId).HasColumnName("UserID");
+        //    entity.Property(e => e.CartId).HasColumnName("CartID");
+        //    entity.Property(e => e.UserId).HasColumnName("UserID");
 
-            entity.HasOne(d => d.User).WithOne(p => p.Cart)
-                .HasForeignKey<Cart>(d => d.UserId)
-                .HasConstraintName("FK_UserCart");
-        });
+        //    entity.HasOne(d => d.User).WithOne(p => p.Cart)
+        //        .HasForeignKey<Cart>(d => d.UserId)
+        //        .HasConstraintName("FK_UserCart");
+        //});
 
         modelBuilder.Entity<CartItem>(entity =>
         {

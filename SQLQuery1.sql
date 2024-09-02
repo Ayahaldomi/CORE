@@ -39,9 +39,12 @@ VALUES
 CREATE TABLE Users (
     UserID int PRIMARY KEY IDENTITY(1,1),
     Username varchar(100) NOT NULL,
-    Password varchar(100) NOT NULL,
+    PasswordHash VARBINARY(max) NOT NULL,
+    PasswordSalt VARBINARY(max) NOT NULL,
     Email varchar(100) NOT NULL
 );
+
+
 
 -- Create the Orders table
 CREATE TABLE Orders (
@@ -52,6 +55,19 @@ CREATE TABLE Orders (
     FOREIGN KEY (UserID) REFERENCES Users(UserID),
     FOREIGN KEY (productId) REFERENCES Products(ProductID),
 );
+
+
+CREATE TABLE UserRoles (
+UserID INT,
+Role NVARCHAR(50),
+CONSTRAINT PK_UserRoles PRIMARY KEY (UserID, Role),
+CONSTRAINT FK_UserRole_User FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+INSERT INTO UserRoles (UserID, Role)
+VALUES
+(1, 'Admin'),
+(2, 'Client');
+
 
 -- Insert data into the Users table
 INSERT INTO Users (Username, Password, Email)

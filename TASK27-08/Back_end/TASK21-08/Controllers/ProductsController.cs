@@ -62,7 +62,7 @@ namespace TASK21_08.Controllers
 
                 var filePath = Path.Combine(uploadsFolderPath, product.ProductImage.FileName);
 
-                Ensure the file stream is properly handled with async/ await
+                //Ensure the file stream is properly handled with async/ await
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await product.ProductImage.CopyToAsync(stream);
