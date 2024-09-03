@@ -1,9 +1,15 @@
 var n = localStorage.getItem("cartID");
 var url = `https://localhost:44348/api/Cart/${n}`;
 var tbody = document.getElementById("tbody");
+
+var jwtToken = localStorage.getItem("jwtToken"); 
 async function allCart() {
 
-    var requist = await fetch(url);
+    var requist = await fetch(url, {
+        headers: {
+            'Authorization': `Bearer ${jwtToken}`
+        }}
+    );
     var response = await requist.json();
     response.forEach(element => {
         var row = document.createElement("tr");
@@ -27,7 +33,9 @@ allCart();
 
 
 async function edit(id) {
+    
     debugger;
+    
     event.preventDefault();
     var quantity = document.getElementById(`quantity${id}`);
     var data = {

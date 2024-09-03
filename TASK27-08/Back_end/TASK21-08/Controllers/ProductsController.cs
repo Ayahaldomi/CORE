@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -15,33 +16,33 @@ namespace TASK21_08.Controllers
         public ProductsController(MyDbContext db) { _db = db; }
 
 
-        [HttpGet("number")]
-        public IActionResult number(int num1, int num2)
-        {
+        //[HttpGet("number")]
+        //public IActionResult number(int num1, int num2)
+        //{
 
-            if (num1 == 30 || num2 == 30)
-            {
+        //    if (num1 == 30 || num2 == 30)
+        //    {
 
-                return Ok("true");
-            }
-            if (num1 + num2 == 30)
-            {
-                return Ok("true");
-            }
-            return Ok("false");
-        }
+        //        return Ok("true");
+        //    }
+        //    if (num1 + num2 == 30)
+        //    {
+        //        return Ok("true");
+        //    }
+        //    return Ok("false");
+        //}
 
-        [HttpGet("three")]
-        public IActionResult three(int num1)
-        {
-            if (num1 % 3 == 0 || num1 % 7 == 0)
-            {
-                return Ok("true");
-            }
-            return Ok("false");
-        }
+        //[HttpGet("three")]
+        //public IActionResult three(int num1)
+        //{
+        //    if (num1 % 3 == 0 || num1 % 7 == 0)
+        //    {
+        //        return Ok("true");
+        //    }
+        //    return Ok("false");
+        //}
 
-
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
@@ -169,6 +170,8 @@ namespace TASK21_08.Controllers
             return Ok(product);
         }
 
+
+        [Authorize]
         [HttpGet("/ProductByCategoryId/{id}")]
         public IActionResult GetByCategoryId(int id)
         {

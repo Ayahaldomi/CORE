@@ -7,12 +7,19 @@ if (number == 0) {
 else{
    var url = `https://localhost:44348/ProductByCategoryId/${number}`;
 }
+var jwtToken = localStorage.getItem("jwtToken"); 
 
 
 async function allProducts() {
+    if(jwtToken == null) {
+        alert("Please Login First");
+    }
     debugger
 
-    var requist = await fetch(url);
+    var requist = await fetch(url, {
+        headers: {
+            'Authorization': `Bearer ${jwtToken}`
+        }});
     var response = await requist.json();
 
     var container = document.getElementById("contriner");

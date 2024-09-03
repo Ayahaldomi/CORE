@@ -412,3 +412,4 @@ C:\Users\Orange\Desktop\CORE\CORE\TASK27-08\Back_end\TASK21-08\obj\Debug\net8.0\
 C:\Users\Orange\Desktop\CORE\CORE\TASK27-08\Back_end\TASK21-08\obj\Debug\net8.0\TASK21-08.pdb
 C:\Users\Orange\Desktop\CORE\CORE\TASK27-08\Back_end\TASK21-08\obj\Debug\net8.0\TASK21-08.genruntimeconfig.cache
 C:\Users\Orange\Desktop\CORE\CORE\TASK27-08\Back_end\TASK21-08\obj\Debug\net8.0\ref\TASK21-08.dll
+C:\Users\Orange\Desktop\CORE\CORE\TASK27-08\Back_end\TASK21-08\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

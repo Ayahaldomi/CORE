@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using System.Linq;
 using TASK21_08.DTOs;
 using TASK21_08.Models;
@@ -12,11 +13,17 @@ namespace TASK21_08.Controllers
     public class UsersController : ControllerBase
     {
         private readonly MyDbContext _db;
-
-        public UsersController(MyDbContext db)
+        private readonly TokenGenerator _tokenGenerator;
+        public UsersController(MyDbContext db, TokenGenerator tokenGenerator)
         {
             _db = db;
+            _tokenGenerator = tokenGenerator;
         }
+        
+      
+
+          
+
 
         //[HttpPost("math")]
         //public IActionResult math(string math)
@@ -184,11 +191,42 @@ namespace TASK21_08.Controllers
             var cartid = await _db.Carts.FirstOrDefaultAsync( l => l.UserId == user.UserId );
 
             user.Cart = cartid;
-            // Generate a token or return a success response
-            return Ok(user);
+
+
+            var roles = _db.UserRoles.Where(x => x.UserId == user.UserId).Select(ur => ur.Role).ToList();
+            var token = _tokenGenerator.GenerateToken(user.Username, roles);
+
+            return Ok(new { Token = token });
         }
 
+
+        //[HttpPost("nums")]
+        //public IActionResult nums(string nums)
+        //{
+        //    string[] n = nums.Split(' ');
+
+        //    foreach (string s in n) {
+        //        var count = 0;
+        //        foreach (string s2 in n) {
+
+        //            if (s2 == s) { 
+        //                count++;
+
+        //            }
+        //        }
+
+        //        if (count % 2 != 0)
+        //        {
+        //            return Ok(s);
+
+        //        }
+        //    }
+
+        //    return Ok(0);
+        //}
+
        
+
 
     }
 }

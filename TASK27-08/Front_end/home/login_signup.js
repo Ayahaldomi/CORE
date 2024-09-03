@@ -34,16 +34,17 @@ async function signin(){
         body: formData
     })
     if(requist.ok){
-        var user = await requist.json();
+        var result = await requist.json();
+        localStorage.setItem('jwtToken', result.token);
 
-            // Access and store the cartId in localStorage
-            localStorage.setItem("cartID", user.cart.cartId);
+            // // Access and store the cartId in localStorage
+            // localStorage.setItem("cartID", user.cart.cartId);
 
-            // Store the entire user information in localStorage
-            localStorage.setItem("userInfo", JSON.stringify(user));
+            // // Store the entire user information in localStorage
+            // localStorage.setItem("userInfo", JSON.stringify(user));
             
             // Redirect to the home page
-            location.href = "home.html";
+            window.history.back();
     }else{
         alert("Invalid credentials");
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TASK21_08.DTOs;
 using TASK21_08.Models;
@@ -19,6 +20,8 @@ namespace TASK21_08.Controllers
             return Ok(allcarts);
         }
 
+
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult GetAll (int id)
         {
